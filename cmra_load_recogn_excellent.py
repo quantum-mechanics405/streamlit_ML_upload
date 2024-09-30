@@ -13,7 +13,7 @@ def preprocess_image(image):
     # Resize image to 224x224
     image = image.resize((224, 224))
     # Convert image to numpy array
-    image_array = np.array(image)
+    image_array = np.array(image) 
     # Add batch dimension
     image_array = np.expand_dims(image_array, axis=0)
     # Preprocess image for ResNet50
